@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Score Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>🏀Basketball Score Board🏀</h1>
+    <div id="timer">
+        <span id="hour">00</span>
+        <span id="min"> : 00 :</span>
+        <span id="sec">00</span>
+    </div>
+    <div class="container">
+        <div>
+            <h3>HOME</h3>
+            <div class="score"><span id="home-score"></span></div>
+            <div class="btn add-btn">
+                <button onclick="homeadd1()">+1</button>
+                <button onclick="homeadd2()">+2</button>
+                <button onclick="homeadd3()">+3</button>
+            </div>
+            <div class="btn remove-btn">
+                <button onclick="homeremove1()">-1</button>
+                <button onclick="homeremove2()">-2</button>
+                <button onclick="homeremove3()">-3</button>
+            </div>
+            <button class="reset-btn" onclick="resethomescore()">Reset</button>
+        </div>
+        <div>
+            <h3>GUEST</h3>
+            <div class="score"><span id="guest-score">0</span></div>
+            <div class="btn add-btn">
+                <button onclick="guestadd1()">+1</button>
+                <button onclick="guestadd2()">+2</button>
+                <button onclick="guestadd3()">+3</button>
+            </div>
+            <div class="btn remove-btn">
+                <button onclick="guestremove1()">-1</button>
+                <button onclick="guestremove2()">-2</button>
+                <button onclick="guestremove3()">-3</button>
+            </div>
+            <button class="reset-btn" onclick="resetguestscore()">Reset</button>
+        </div>
+    </div>
+    <button class="start-btn" onclick="starttime()">Start</button>
+    <button class="stop-btn" onclick="stoptime()">Stop</button>
+    <button class="reset-btn" onclick="resettimer()">Reset Timer</button>
+    <script src="index.js"></script>
+</body>
+
+</html>
